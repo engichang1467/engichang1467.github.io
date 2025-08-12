@@ -1,718 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Chang - Research Profile</title>
+  <style>
+      /* Tailwind's CSS Reset */
+      progress,sub,sup{vertical-align:baseline}a,hr{color:inherit}*,::after,::backdrop,::before,::file-selector-button{box-sizing:border-box;margin:0;padding:0;border:0 solid}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:--theme(
+          --default-font-family,
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji'
+        );font-feature-settings:--theme(--default-font-feature-settings,normal);font-variation-settings:--theme(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:--theme(
+          --default-mono-font-family,
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          'Liberation Mono',
+          'Courier New',
+          monospace
+        );font-feature-settings:--theme(--default-mono-font-feature-settings,normal);font-variation-settings:--theme(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}summary{display:list-item}menu,ol,ul{list-style:none}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}::file-selector-button,button,input,optgroup,select,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;border-radius:0;background-color:transparent;opacity:1}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not (-webkit-appearance:-apple-pay-button)) or (contain-intrinsic-size:1px){::placeholder{color:color-mix(in oklab,currentcolor 50%,transparent)}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-meridiem-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}::file-selector-button,button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}
 
-  <title>Michael Chang</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+      /* Base Light Theme Styles */
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        line-height: 1.6;
+        color: #374151;
+        background: #ffffff;
+      }
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: left;
+      }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      .prose {
+        color: #374151;
+        max-width: none;
+      }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      .prose h1, .prose h2, .prose h3 {
+        color: #111827;
+      }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+      .prose h1 {
+        font-weight: 800;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+      }
 
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.2.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+      .prose h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      }
+
+      .prose h3 {
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+      }
+
+      .prose p {
+        margin-bottom: 1.25em;
+        margin-top: 1.25em;
+      }
+
+      .prose p:first-child {
+        margin-top: 0;
+      }
+
+      .prose a {
+        color: #3b82f6;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      .prose a:hover {
+        color: #1d4ed8;
+      }
+
+      .prose strong {
+        color: #111827;
+        font-weight: 600;
+      }
+
+      .prose em {
+        color: #111827;
+        font-style: italic;
+      }
+
+      .prose ul {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        padding-left: 1.625em;
+      }
+
+      .prose li {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+      .header-section {
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 0.5rem;
+        padding-top: 0.25rem;
+        flex-wrap: wrap;
+      }
+
+      .social-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563 !important;
+        text-decoration: none !important;
+      }
+
+      .social-link:hover {
+        color: #2563eb !important;
+      }
+
+      .profile-section {
+        position: relative;
+      }
+
+      .profile-image-container {
+        float: right;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        width: 16rem;
+      }
+
+      .profile-image-container img {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 16rem;
+        width: 16rem;
+        border-radius: 0.125rem;
+        display: block;
+      }
+
+      .profile-social-links {
+        display: flex;
+        justify-content: space-around;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .bio-content {
+        font-size: 0.875rem;
+        color: #4b5563;
+      }
+
+      .publications-section {
+        clear: both;
+        margin-top: 2rem;
+      }
+
+      .publications-list {
+        border-top: 1px solid #e5e7eb;
+      }
+
+      .publication-item {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .publication-image {
+        position: relative;
+        height: 6rem;
+        width: 6rem;
+        flex-shrink: 0;
+      }
+
+      .publication-image img {
+        height: auto;
+        max-height: 6rem;
+        width: auto;
+        max-width: 6rem;
+        border-radius: 0.125rem;
+        object-fit: contain;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .publication-content {
+        flex: 1;
+      }
+
+      .publication-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #111827;
+        margin-bottom: 0.5rem;
+      }
+
+      .publication-authors {
+        font-size: 0.875rem;
+        color: #4b5563;
+        margin: 0.25rem 0;
+      }
+
+      .publication-venue {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #1f2937;
+        font-style: italic;
+        margin: 0.25rem 0;
+      }
+
+      .publication-links {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .publication-link {
+        border: 1px solid #000000;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #000000 !important;
+        text-decoration: none !important;
+      }
+
+      .publication-link:hover {
+        border-color: #3b82f6;
+        color: #3b82f6 !important;
+      }
+
+      /* Dark Theme Styles - using prefers-color-scheme media query */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1e2b38;
+          color: #f3f4f6;
+        }
+
+        .prose {
+          color: #f3f4f6;
+        }
+
+        .prose h1,
+        .prose h2,
+        .prose h3,
+        .prose strong,
+        .prose em {
+          color: #ffffff;
+        }
+
+        .prose a {
+          color: #60a5fa; /* A lighter blue for better contrast on dark background */
+        }
+
+        .prose a:hover {
+          color: #3b82f6;
+        }
+
+        .social-link {
+          color: #d1d5db !important;
+        }
+        
+        .social-link:hover {
+          color: #60a5fa !important;
+        }
+
+        .bio-content,
+        .publication-authors {
+          color: #d1d5db;
+        }
+        
+        .publication-venue {
+          color: #e5e7eb;
+        }
+
+        .publications-list {
+          border-top: 1px solid #4b5563;
+        }
+
+        .publication-item {
+          border-bottom: 1px solid #4b5563;
+        }
+
+        .publication-image img {
+          background: #111827; /* Darker background for image container in dark mode */
+        }
+
+        .publication-link {
+          border: 1px solid #f3f4f6;
+          color: #f3f4f6 !important;
+        }
+
+        .publication-link:hover {
+          border-color: #60a5fa;
+          color: #60a5fa !important;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .profile-image-container {
+          float: none;
+          margin-left: 0;
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        .profile-image-container img {
+          width: 100%;
+          height: auto;
+          max-width: 16rem;
+          margin: 0 auto;
+        }
+
+        .publication-item {
+          flex-direction: column;
+        }
+
+        .publication-image {
+          align-self: center;
+        }
+      }
+    </style>
 </head>
-
 <body>
+  <div class="container">
+    <div class="prose">
+      <div class="header-section">
+        <h1>Michael Chang</h1>
+      </div>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+      <div class="profile-section">
+        
+          <div class="profile-image-container">
+            <img src="data:image/jpeg;base64,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" alt="Profile" />
+            <div class="profile-social-links">
+              <a href="https://scholar.google.com/citations?user=NvRbbfsAAAAJ" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></a><a href="https://github.com/engichang1467" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a><a href="https://www.linkedin.com/in/michael-chang-438349157/" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+        
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img3.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Michael Chang</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/mikeychanging" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/michael.changman/" class="instagram"><i class="bx bxl-instagram"></i></a> 
-          <!-- <a href="#" class="discord"><i class="bx bxl-discord"></i></a> -->
-          <a href="https://github.com/engichang1467" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/michael-chang-438349157/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <div class="bio-content">
+          <p>Hi! I’m Michael, a machine learning engineer with over two years of experience turning cutting-edge AI ideas into reality. My passion lies in pushing the boundaries of AI through research in reinforcement learning, large language models (LLMs), and multimodal systems.  </p><p>I’m driven by the dream of contributing as a research scientist at world-renowned AI labs like DeepMind and Meta AI (FAIR), where innovation transforms the future. When I’m not deep in code or research papers, I enjoy volleyball, skiing and playing go.  </p><p>Feel free to explore my website to learn more about my projects, publications, and aspirations!  </p>
         </div>
       </div>
 
-      <nav class="nav-menu">
-        <ul>
-          <!-- <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li> -->
-          <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-          <!-- <li><a href="#services"><i class="bx bx-server"></i> Services</a></li> -->
-          <!-- <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li> -->
-
-        </ul>
-      </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+      
+        <div class="publications-section">
+          <h2>Publications</h2>
+          <div class="publications-list">
+            
+                <div class="publication-item">
+                  
+                    <div class="publication-image">
+                      
+                    </div>
+                  
+                  <div class="publication-content">
+                    <h3 class="publication-title">A Perspective on Fluid Mechanical Environment for Challenges in Reinforcement Learning</h3>
+                    <p class="publication-authors">Shruti Mishra, Michael Chang, Vamsi Spandan, Shmuel Rubinstein</p>
+                    <p class="publication-venue">RLC 2025 Workshop</p>
+                    <div class="publication-links"><a href="https://openreview.net/forum?id=2vQj4tdDkP" target="_blank" rel="noopener noreferrer" class="publication-link">ABS</a><a href="https://openreview.net/pdf?id=2vQj4tdDkP" target="_blank" rel="noopener noreferrer" class="publication-link">PDF</a></div>
+                  </div>
+                </div>
+              
+                <div class="publication-item">
+                  
+                    <div class="publication-image">
+                      <img src="data:image/jpeg;base64,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" alt="INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge" />
+                    </div>
+                  
+                  <div class="publication-content">
+                    <h3 class="publication-title">INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge</h3>
+                    <p class="publication-authors">Angelika Romanou, Negar Foroutan, Anna Sotnikova, Zeming Chen, Sree Harsha Nelaturu, Shivalika Singh, Rishabh Maheshwary, Micol Altomare, Mohamed A. Haggag, Snegha A, Alfonso Amayuelas, Azril Hafizi Amirudin, Viraat Aryabumi, Danylo Boiko, Michael Chang, Jenny Chim, Gal Cohen, Aditya Kumar Dalmia, Abraham Diress, Sharad Duwal, Daniil Dzenhaliou, Daniel Fernando Erazo Florez, Fabian Farestam, Joseph Marvin Imperial, Shayekh Bin Islam, Perttu Isotalo, Maral Jabbarishiviari, Börje F. Karlsson, Eldar Khalilov, Christopher Klamm, Fajri Koto, Dominik Krzemiński, Gabriel Adriano de Melo, Syrielle Montariol, Yiyang Nan, Joel Niklaus, Jekaterina Novikova, Johan Samir Obando Ceron, Debjit Paul, Esther Ploeger, Jebish Purbey, Swati Rajwal, Selvan Sunitha Ravi, Sara Rydell, Roshan Santhosh, Drishti Sharma, Marjana Prifti Skenduli, Arshia Soltani Moakhar, Bardia Soltani Moakhar, Ran Tamir, Ayush Kumar Tarun, Azmine Toushik Wasi, Thenuka Ovin Weerasinghe, Serhan Yilmaz, Mike Zhang, Imanol Schlag, Marzieh Fadaee, Sara Hooker, Antoine Bosselut</p>
+                    <p class="publication-venue">ICLR 2025</p>
+                    <div class="publication-links"><a href="https://arxiv.org/abs/2411.19799" target="_blank" rel="noopener noreferrer" class="publication-link">ABS</a><a href="https://arxiv.org/pdf/2411.19799" target="_blank" rel="noopener noreferrer" class="publication-link">PDF</a><a href="https://huggingface.co/datasets/CohereForAI/include-base-44" target="_blank" rel="noopener noreferrer" class="publication-link">CODE</a></div>
+                  </div>
+                </div>
+              
+          </div>
+        </div>
       
     </div>
-  </header><!-- End Header -->
-  
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" style="background-image: url('assets/img/header-background.jpg');" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Michael Chang</h1>
-      <p>I am a <span class="typed" data-typed-items="Developer, Student, Leader, A.I. Enthusiast"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>As a Fourth-year Computer Science student, I'm open to full-time opportunities, and I hope I can apply what I learned from school into my future career.</p>
-          <!-- <p>I'm very passionate about Python, NodeJS, Web and App development, working out, work-life balance, reading, self-improvements, and continuous learning.</p> -->
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img3.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Software &amp; Web Developer.</h3>
-            <p class="font-italic">
-              I'm very passionate about Python, NodeJS, Web and App development, working out, work-life balance, reading, self-improvements, and continuous learning.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> January 26, 1999</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> https://engichang1467.github.io/</li>
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li> -->
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Richmond, BC, Canada</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 21</li> -->
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor of Computer Science</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> mchang0926@gmail.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email (School):</strong> mca183@sfu.ca</li>
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li> -->
-                </ul>
-              </div>
-            </div>
-            <!-- <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p> -->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <!-- <section id="facts" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>I'm very passionate about Python, NodeJS, Database, Web and AI development. I also like to challenge myself to learn new technologies, which helps me to stay curious and motivate me to continue to learn.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">NodeJS <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MySQL <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Michael Chang</h4>
-              <p><em>Forth year computer science student with 10 months of experience as a web developer for Healthcare and startup organizations from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Richmond, BC, Canada</li>
-                <!-- <li>(123) 456-7891</li> -->
-                <li>mca183@sfu.ca</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <!-- <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div> -->
-            <div class="resume-item">
-              <h4>Bachelor of Computer Science</h4>
-              <h5>2017 - 2022</h5>
-              <p><em>Simon Fraser University (SFU), Burnaby, BC</em></p>
-              <!-- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
-            </div>
-
-            <h3 class="resume-title">Professional Skills</h3>
-            <div class="resume-item">
-              <ul>
-                <li>Quick learner of various skill sets</li>
-                <li>Genuine curiosity</li> 
-                <li>Cooperate to people with diverse background</li> 
-                <li>Articulate clearly while listening attentively</li> 
-                <li>Sheer will that drives me to complete important task before hitting the deadline</li> 
-                <li>Creative mind</li> 
-                <li>Innovative</li> 
-                <li>Ambitious goals</li> 
-                <li>Growth mindset</li> 
-                <li>Creative thinking</li> 
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Work Experiences</h3>
-            <div class="resume-item">
-              <h4>Software Engineering Intern (Machine Learning)</h4>
-              <h5>January 2022 - Present</h5>
-              <p><em>HomeX, Toronto, ON (Work remotely at Vancouver) </em></p>
-              <ul>
-                <li>Research on applying Transfer Learning and Computer Vision to optimize object classification.</li>
-                <li>Using Keras and TensorFlow to create the machine learning model for image classification.</li>
-                <li>Using Sklearn to perform randomized search cross-validation to find the optimal hyperparameter for the model.</li>
-                <li>Using Python, FastAPI, and OpenCV to create a RESTful API for classifying images.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Engineering Intern (Payment)</h4>
-              <h5>September 2021 - December 2021</h5>
-              <p><em>HomeX, Toronto, ON (Work remotely at Vancouver) </em></p>
-              <ul>
-                <li>Integrated Apple Pay and Google Pay into the payment backend.</li>
-                <li>Used NodeJS and MongoDB to develop backend API to help manage user accounts.</li>
-                <li>Used ASP.NET Core, PostgresSQL and Stripe API to develop backend API for payment system.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Engineering Intern</h4>
-              <h5>September 2020 - April 2021</h5>
-              <p><em>Philips Electronics Ltd, Vancouver, BC </em></p>
-              <ul>
-                <li>Part of the Vancouver based Senior Living Software development team.</li>
-                <li>Use NodeJS and MySQL to develop powerful backend APIs and database, micro services and analytics to serve cutting edge features and data to the end user.</li>
-                <li>Build sleek, responsive UIs on both the web and mobile in Angular.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Engineering Intern</h4>
-              <h5>May - August 2019</h5>
-              <p><em>BC Cancer Research, Vancouver, BC </em></p>
-              <ul>
-                <li>Developed a web application with Flask and VueJS to help researchers to organize patient’s data.</li>
-                <li>Collaborated with researchers to explore and develop better tools for them to optimize their research. </li>
-                <li>Created a database for storage and retrieval of data from biodistribution studies used in the development of radiopharmaceuticals.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Developer (Volunteer)</h4>
-              <h5>June - October 2018</h5>
-              <p><em>MOCA Auto Body Estimator, Vancouver, BC</em></p>
-              <ul>
-                <li>Developed a mobile application version of the website for future development using React Native for frontend and Django framework for the backend</li>
-                <li>Investigated the auto body shop business to seek solutions for providing better customer experience on the company’s website.</li>
-              </ul>
-            </div>
-            <!-- <div class="resume-item">
-              <h4>Software Team Member</h4>
-              <h5>Septeber 2017 - Present</h5>
-              <p><em>SFU Robot Soccer Team, Burnaby, BC</em></p>
-              <ul>
-                <li>Collaborate with engineers to explore and develop better tools for them to optimize their control of the robot.</li>
-                <li>Create & friendly GUI application with C++, OpenGL, and QT framework to allow users to easily control the robot.</li>
-              </ul>
-            </div> -->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Here are my personal projects.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <!-- <li data-filter=".filter-card">Card</li> -->
-              <li data-filter=".filter-web">Web</li>
-              <li data-filter=".filter-game">Game</li>
-              <li data-filter=".filter-bot">Bot</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/interviewAI/startingScreen.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/interviewAI/startingScreen.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="Projects/interviewAI.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game filter-bot">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/SpaceInvadersAI/gameplay.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/SpaceInvadersAI/gameplay.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="Projects/spaceInvaderAI.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/QuakeIIISim/GameArena.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/QuakeIIISim/GameArena.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="Projects/quakeIIIArenaSim.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/RunFromZombie/withZombies.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/RunFromZombie/withZombies.png" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="Projects/runFromZombie.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/Sketchy/sketchLogo.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/Sketchy/sketchLogo.png" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="Projects/sketchy.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bot">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/SFUCourseNav/logo.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/SFUCourseNav/logo.png" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="Projects/courseNav.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/PomoLofi/onPhone.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/PomoLofi/onPhone.png" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="Projects/pomoLofi.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/Tipper/onPhone2.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/Tipper/onPhone2.png" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="Projects/tipper.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/Woofer/siteDemoSmall.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/Woofer/siteDemoSmall.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="Projects/woofer.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/TreasureHunter/shownMaze.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/projects/TreasureHunter/shownMaze.png" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="Projects/treasureHunter.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="icofont-earth"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-image"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="icofont-settings"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-        </div>
-
-      </div>
-    </section>End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item" data-aos="fade-up">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  </div>
 </body>
-
 </html>
