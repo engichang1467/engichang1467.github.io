@@ -257,6 +257,55 @@
         color: #3b82f6 !important;
       }
 
+      .projects-section {
+        clear: both;
+        margin-top: 2rem;
+      }
+
+      .projects-list {
+        border-top: 1px solid #e5e7eb;
+      }
+
+      .project-item {
+        padding: 1rem 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .project-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #111827;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-description {
+        font-size: 0.875rem;
+        color: #4b5563;
+        margin: 0.25rem 0;
+      }
+
+      .project-links {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .project-link {
+        border: 1px solid #000000;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #000000 !important;
+        text-decoration: none !important;
+      }
+
+      .project-link:hover {
+        border-color: #3b82f6;
+        color: #3b82f6 !important;
+      }
+
       /* Dark Theme Styles - using prefers-color-scheme media query */
       @media (prefers-color-scheme: dark) {
         body {
@@ -319,6 +368,28 @@
         }
 
         .publication-link:hover {
+          border-color: #60a5fa;
+          color: #60a5fa !important;
+        }
+
+        .projects-list {
+          border-top: 1px solid #4b5563;
+        }
+
+        .project-item {
+          border-bottom: 1px solid #4b5563;
+        }
+
+        .project-description {
+          color: #d1d5db;
+        }
+
+        .project-link {
+          border: 1px solid #f3f4f6;
+          color: #f3f4f6 !important;
+        }
+
+        .project-link:hover {
           border-color: #60a5fa;
           color: #60a5fa !important;
         }
@@ -421,7 +492,18 @@
               
           </div>
         </div>
-      
+
+        <div class="projects-section">
+          <h2>Projects</h2>
+          <div class="projects-list">
+            <div class="project-item">
+              <h3 class="project-title">Open-Rig3R</h3>
+              <p class="project-description">A reimplementation of <em>Rig3R: Rig-Aware Conditioning for Learned 3D Reconstruction</em> (Li et al., 2025), built for clarity, reproducibility, and extensibility. Rig3R is a transformer-based model for multiview 3D reconstruction and camera pose estimation that incorporates rig-aware conditioning: unlike prior models such as DUSt3R and Fast3R, it learns to leverage rig metadata (camera ID, timestamp, and rig pose) when available, and can infer rig structure when it isn't, enabling robust 3D reconstruction across both unstructured and rig-based image sets. Using a ViT-Large encoder-decoder, the model jointly predicts dense pointmaps, pose raymaps, and rig-relative raymaps, recovers camera poses in closed form from those raymaps, and can perform unsupervised rig discovery, clustering frames by camera and recovering rig extrinsics from unordered image collections.</p>
+              <div class="project-links"><a href="https://github.com/engichang1467/Open-Rig3R" target="_blank" rel="noopener noreferrer" class="project-link">CODE</a><a href="https://arxiv.org/abs/2506.02265" target="_blank" rel="noopener noreferrer" class="project-link">PAPER</a></div>
+            </div>
+          </div>
+        </div>
+
     </div>
   </div>
 </body>
